@@ -1,6 +1,6 @@
 services:
   test-app:
-      scale: 0
+      scale: 1
       image: nginx
       restart: unless-stopped
       environment:
@@ -8,3 +8,8 @@ services:
         HELLO: World
       ports:
         - "81:80"
+      networks:
+        - web
+
+networks:
+  web:
