@@ -11,7 +11,7 @@ services:
       networks:
         - web
       volumes:
-        web:/test
+        - web:/test
 
 networks:
   web:
