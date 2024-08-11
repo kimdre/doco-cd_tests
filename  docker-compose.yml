@@ -1,0 +1,10 @@
+services:
+  test-app:
+      scale: 1
+      image: nginx
+      restart: unless-stopped
+      environment:
+        TZ: Europe/Berlin
+        HELLO: World
+      ports:
+        - "81:80"
