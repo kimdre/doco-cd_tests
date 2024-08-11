@@ -1,1 +1,4 @@
 name: nginx-test
+reference: refs/heads/main
+compose_files:
+  - docker-compose.yml
