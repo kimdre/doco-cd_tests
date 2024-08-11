@@ -10,6 +10,11 @@ services:
         - "81:80"
       networks:
         - web
+      volumes:
+        web:/test
 
 networks:
   web:
+
+volumes:
+  test:
