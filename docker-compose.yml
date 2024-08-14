@@ -1,6 +1,6 @@
 services:
   test-app:
-      scale: 1
+      scale: 0
       image: nginx
       restart: unless-stopped
       environment:
