@@ -1,20 +1,13 @@
 services:
-  test-app:
+  test:
       scale: 1
+      container_name: test
       image: nginx
       restart: unless-stopped
       environment:
         TZ: Europe/Berlin
         HELLO: World
       ports:
-        - "81:80"
-      networks:
-        - web
+        - "8080:80"
       volumes:
-        - web:/test
-
-networks:
-  web:
-
-volumes:
-  web:
+        - ./html/usr/share/nginx/html
