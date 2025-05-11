@@ -5,5 +5,5 @@ compose_files:
 force_recreate: true
 destroy: true
 destroy_opts:
-  remove_volumes: false
+  remove_volumes: true
   remove_dir: true
