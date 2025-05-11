@@ -6,4 +6,4 @@ force_recreate: true
 destroy: true
 destroy_opts:
   remove_volumes: false
-  remove_dir: false
+  remove_dir: true
