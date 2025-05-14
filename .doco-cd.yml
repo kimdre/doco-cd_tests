@@ -1,5 +1,5 @@
 name: test-deploy
-reference: refs/tags/v1.0.0 #refs/heads/main 
+reference: refs/tags/v1.0.0
 compose_files:
   - docker-compose.yml
 force_recreate: true
