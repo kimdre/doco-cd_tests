@@ -1,5 +1,5 @@
 name: test-deploy
-reference: main #refs/heads/destroy
+reference: destroy #refs/heads/destroy
 compose_files:
   - docker-compose.yml
 force_recreate: false
