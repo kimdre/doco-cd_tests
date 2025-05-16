@@ -1,6 +1,5 @@
 name: test-deploy
-reference: main #refs/heads/destroy
-compose_files:
-  - docker-compose.yml
+reference: main
+repository_url: https://github.com/kimdre/doco-cd.git
 force_recreate: false
 # main
