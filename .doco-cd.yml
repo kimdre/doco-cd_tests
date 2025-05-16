@@ -1,5 +1,6 @@
 name: test-deploy
 reference: main
 repository_url: https://github.com/kimdre/doco-cd.git
+working_dir: test
 force_recreate: false
 # main
