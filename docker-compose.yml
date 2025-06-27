@@ -7,7 +7,7 @@ services:
     environment:
       TZ: Europe/Berlin
       HELLO: World!
-      ALTERNATIVE: "true"
+    env_file: "foo.env"
     ports:
       - "12345:80"
     volumes:
