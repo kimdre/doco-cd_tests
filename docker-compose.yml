@@ -6,7 +6,7 @@ services:
     restart: unless-stopped
     environment:
       TZ: Europe/Berlin
-      HELLO: World!
+      SOME: Value
     ports:
       - "12345:80"
     volumes:
