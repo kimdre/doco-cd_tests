@@ -13,7 +13,7 @@ services:
       - ./html:/usr/share/nginx/html
       - test:/test
     env_file:
-      - test.env
+      - test.enc.env
     networks:
       test:
 
