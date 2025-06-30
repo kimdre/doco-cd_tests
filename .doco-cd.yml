@@ -1,6 +1,6 @@
 name: test-deploy
 #reference: alternative
-reference: ""
+reference:
 compose_files:
   - docker-compose.yml
 #force_recreate: false
