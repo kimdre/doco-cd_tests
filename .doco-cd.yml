@@ -1,10 +1,10 @@
 name: app1
 #reference: main
-working_dir: app1
+working_dir: deploy/app1
 #compose_files:
 #  - docker-compose.yml
 #force_recreate: false
 # main
 ---
 name: app2
-working_dir: app2
+working_dir: deploy/app2
