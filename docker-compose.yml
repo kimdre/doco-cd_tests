@@ -14,7 +14,7 @@ services:
     volumes:
       - ./html:/usr/share/nginx/html
       - test:/test
-      - ./bind:/bind
+      - ./asdf:/bind
     networks:
       test:
 
