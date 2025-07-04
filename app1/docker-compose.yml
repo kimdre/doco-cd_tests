@@ -1,16 +1,13 @@
 services:
   test:
     scale: 1
-    container_name: test
     image: nginx
     restart: unless-stopped
     environment:
       TZ: Europe/Berlin
       SOME: Value
-    ports:
-      - "12345:80"
     volumes:
-      - ./html:/usr/share/nginx/html
+      - ./html:/usr/share/nginx/html0
       - test:/test
     env_file:
       - test.enc.env
