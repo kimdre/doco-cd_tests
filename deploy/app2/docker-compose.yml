@@ -6,7 +6,7 @@ services:
     environment:
       TZ: Europe/Berlin
       SOME: Value
-      id: 3
+      id: 2
     volumes:
       - ./html:/usr/share/nginx/html
       - test:/test
