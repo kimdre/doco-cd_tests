@@ -6,5 +6,5 @@ working_dir: deploy/app1
 #force_recreate: false
 # main
 ---
-name: app2
+name: app3
 working_dir: deploy/app2
