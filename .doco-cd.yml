@@ -1,6 +1,7 @@
 name: test-deploy
 #reference: main
-compose_files:
-  - docker-compose.yml
+working_dir: deploy
+#compose_files:
+#  - docker-compose.yml
 #force_recreate: false
 # main
