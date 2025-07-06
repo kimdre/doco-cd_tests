@@ -2,7 +2,7 @@ services:
   test:
     scale: 1
     container_name: test
-    image: nginx
+    image: nginx:stable
     restart: unless-stopped
     environment:
       TZ: Europe/Berlin
