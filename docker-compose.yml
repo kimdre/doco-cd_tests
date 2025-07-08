@@ -23,3 +23,7 @@ volumes:
 
 networks:
   test:
+
+configs:
+  test:
+    file: test.txt
