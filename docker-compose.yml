@@ -14,7 +14,7 @@ services:
       - ./html:/usr/share/nginx/html
       - test:/test
     configs:
-      - test
+      - test.txt
     env_file:
       - test.enc.env
     networks:
@@ -27,5 +27,5 @@ networks:
   test:
 
 configs:
-  test:
+  test.txt:
     file: test.txt
