@@ -15,6 +15,8 @@ services:
       - test:/test
     configs:
       - test.txt
+    secrets:
+      - secret.txt
     env_file:
       - test.enc.env
     networks:
@@ -28,4 +30,8 @@ networks:
 
 configs:
   test.txt:
+    file: test.txt
+
+secrets:
+  secret.txt:
     file: test.txt
