@@ -34,4 +34,4 @@ configs:
 
 secrets:
   secret.txt:
-    file: test.txt
+    file: secret.txt
