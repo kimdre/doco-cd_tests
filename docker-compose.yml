@@ -18,6 +18,7 @@ services:
     secrets:
       - secret.txt
     env_file:
+      - .env
       - test.enc.env
     networks:
       test:
