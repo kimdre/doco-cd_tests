@@ -17,8 +17,9 @@ services:
       - test.txt
     secrets:
       - secret.txt
-    #env_file:
-    #  - test.enc.env
+    env_file:
+      - .env
+      - test.enc.env
     networks:
       test:
 
