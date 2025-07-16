@@ -20,6 +20,8 @@ services:
     env_file:
       - .env
       - test.enc.env
+    labels:
+      this: "test"
     networks:
       test:
     healthcheck:
