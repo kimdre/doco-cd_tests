@@ -9,6 +9,7 @@ services:
       TZ: Europe/Berlin
       SOME: Value
       id: dsdsd
+      replica_slot: "{{.Task.Slot}}" 
     ports:
       - "12345:80"
     volumes:
