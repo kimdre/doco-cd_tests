@@ -13,10 +13,11 @@ services:
     ports:
       - "12345:80"
     volumes:
-      - ./html:/usr/share/nginx/html
       - test:/test
     configs:
       - test.txt
+      - source: index.html
+        target: /usr/share/nginx/html/index.html
     secrets:
       - secret.txt
     env_file:
@@ -42,6 +43,8 @@ networks:
 configs:
   test.txt:
     file: test.txt
+  index.html:
+    file: ./html/index.html
 
 secrets:
   secret.txt:
