@@ -13,7 +13,6 @@ services:
     ports:
       - "12345:80"
     volumes:
-      - ./html:/html
       - test:/test
     configs:
       - test.txt
