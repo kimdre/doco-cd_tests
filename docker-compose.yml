@@ -16,6 +16,7 @@ services:
       - test:/test
     configs:
       - test.txt
+      - install.sh
       - source: index.html
         target: /usr/share/nginx/html/index.html
     secrets:
