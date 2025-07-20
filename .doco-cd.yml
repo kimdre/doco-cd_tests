@@ -2,4 +2,4 @@ name: test-deploy
 #reference: main
 compose_files:
   - docker-compose.yml
-destroy: true
+destroy: false
