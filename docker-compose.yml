@@ -41,6 +41,8 @@ networks:
   test:
 
 configs:
+  install.sh:
+    external: true
   test.txt:
     file: test.txt
   index.html:
