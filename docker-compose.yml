@@ -4,7 +4,7 @@ services:
     restart: unless-stopped
     deploy:
       mode: replicated
-      replicas: 1
+      replicas: 2
     environment:
       TZ: Europe/Berlin
       SOME: Value
