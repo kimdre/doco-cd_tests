@@ -3,6 +3,8 @@ services:
     image: nginx:latest
     labels:
       id: 5
+    env_files:
+      - .env
     ports:
       - 8080:80
     volumes:
