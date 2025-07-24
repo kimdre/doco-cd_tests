@@ -3,13 +3,12 @@ services:
     image: nginx:latest
     ports:
       - 8080:80
-    volumes:
-      - ./:/usr/share/nginx/html
+    #volumes:
       #- ./index.html:/usr/share/nginx/html/index.html
-#     configs:
-#       - source: index.html
-#         target: /usr/share/nginx/html/index.html
+    configs:
+      - source: index.html
+        target: /usr/share/nginx/html/index.html
 
-# configs:
-#   index.html:
-#     file: ./index.html
+configs:
+  index.html:
+    file: ./index.html
