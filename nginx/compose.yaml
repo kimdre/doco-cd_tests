@@ -2,7 +2,7 @@ services:
   nginx:
     image: nginx:latest
     labels:
-      id: 7
+      id: 8
     env_file:
       - .env
     ports:
