@@ -2,7 +2,7 @@ services:
   nginx:
     image: nginx:latest
     labels:
-      id: 3
+      id: 4
     ports:
       - 8080:80
     volumes:
