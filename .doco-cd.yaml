@@ -1,5 +1,5 @@
 name: nginx
-working_dir: nginx
+working_dir: "nginx"
 compose_files:
   - compose.yaml
 ---
