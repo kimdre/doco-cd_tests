@@ -5,6 +5,7 @@ services:
       - 8080:80
     volumes:
       - ./index.html:/usr/share/nginx/html/index.html
+      # - ./index.html:/usr/share/nginx/html/index.html
 #     configs:
 #       - source: index.html
 #         target: /usr/share/nginx/html/index.html
