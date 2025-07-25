@@ -13,7 +13,7 @@ services:
 #     configs:
 #       - source: index.html
 #         target: /usr/share/nginx/html/index.html
-v
+
 # configs:
 #   index.html:
 #     file: ./index.html
