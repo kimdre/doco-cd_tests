@@ -1,0 +1,18 @@
+services:
+  nginx:
+    image: nginx
+    profiles:
+      - web
+  
+  traefik:
+    image: traefik
+    profiles:
+      - web
+
+  database:
+    image: postgres
+    profiles:
+      - db
+  
+  memcached:
+    image: memcached

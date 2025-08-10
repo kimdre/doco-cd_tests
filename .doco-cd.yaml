@@ -1,9 +1,3 @@
-name: nginx
-working_dir: "nginx"
-compose_files:
-  - compose.yaml
----
-name: whomai
-working_dir: whoami
-compose_files:
-  - compose.yaml
+name: test
+# profiles:
+#   - web
