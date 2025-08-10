@@ -1,4 +1,3 @@
 name: test
 profiles:
   - db
-destroy: true
