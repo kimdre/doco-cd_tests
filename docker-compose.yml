@@ -42,4 +42,3 @@ configs:
 secrets:
   secret.txt:
     file: secret.txt
-y
