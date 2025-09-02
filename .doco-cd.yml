@@ -1,6 +1,4 @@
 name: test-deploy
-#reference: alternative
+working_dir: deploy/nginx
 compose_files:
   - docker-compose.yml
-#force_recreate: false
-# alternative
