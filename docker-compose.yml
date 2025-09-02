@@ -12,7 +12,7 @@ services:
     ports:
       - "12345:80"
     volumes:
-      - ./html:/usr/share/nginx/html
+      - ./html/index.html:/usr/share/nginx/html/index.html
       - test:/test
       - ./asdf:/bind
     networks:
