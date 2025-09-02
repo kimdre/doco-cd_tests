@@ -4,6 +4,8 @@ services:
     container_name: test
     image: nginx
     restart: unless-stopped
+    depends_on:
+      - dep
     environment:
       TZ: Europe/Berlin
       HELLO: World!
@@ -17,6 +19,9 @@ services:
       - ./asdf:/bind
     networks:
       test:
+
+  dep:
+    image: nginx
 
 volumes:
   test:
