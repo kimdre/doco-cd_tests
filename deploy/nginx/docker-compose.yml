@@ -6,6 +6,7 @@ services:
     restart: unless-stopped
     depends_on:
       - dep
+      - dep2
     environment:
       TZ: Europe/Berlin
       HELLO: World!
