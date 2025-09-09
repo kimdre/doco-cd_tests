@@ -11,7 +11,7 @@ services:
       id: dsdsd
       replica_slot: "{{.Task.Slot}}" 
     ports:
-      - "12345:80"
+      - "80" # Allocate random port on host
     volumes:
       - test:/test
     configs:
