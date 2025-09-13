@@ -1,8 +1,5 @@
 name: test-deploy
-#reference: alternative
 compose_files:
   - docker-compose.yml
-#force_recreate: false
-# alternative
 external_secrets:
   TEST_PASSWORD: 138e3697-ed58-431c-b866-b3550066343a
