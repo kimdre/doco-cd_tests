@@ -8,6 +8,6 @@ services:
       HELLO: World!
       Foo: bar
     labels:
-      test: injected.${TEST_PASSWORD}
+      inject: injected.${TEST_PASSWORD}
       ignore: ignore.\\${TEST_PASSWORD}
     env_file: ./foo.env
