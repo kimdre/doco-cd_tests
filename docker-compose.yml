@@ -4,7 +4,6 @@ services:
     image: nginx
     restart: unless-stopped
     environment:
-      TEST_PASSWORD: hello
       TZ: Europe/Berlin
       HELLO: World!
       Foo: bar
