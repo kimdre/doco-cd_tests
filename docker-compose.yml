@@ -9,5 +9,5 @@ services:
       Foo: bar
     labels:
       inject: injected.${TEST_PASSWORD}
-      ignore: ignore.\\${TEST_PASSWORD}
+      ignore: ignore.\${TEST_PASSWORD}
     env_file: ./foo.env
