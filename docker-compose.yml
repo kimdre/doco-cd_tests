@@ -3,7 +3,7 @@ services:
     container_name: test
     image: nginx
     restart: unless-stopped
-    environment
+    environment:
       TZ: Europe/Berlin
       HELLO: World!
       Foo: bar
