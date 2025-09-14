@@ -1,6 +1,5 @@
 services:
   test:
-    scale: 1
     container_name: test
     image: nginx
     restart: unless-stopped
@@ -11,17 +10,3 @@ services:
     labels:
       test: injected.${TEST_PASSWORD}
     env_file: ./foo.env
-    ports:
-      - "12345:80"
-    volumes:
-      - ./html:/usr/share/nginx/html
-      - test:/test
-      - ./asdf:/bind
-    networks:
-      test:
-
-volumes:
-  test:
-
-networks:
-  test:
