@@ -8,6 +8,8 @@ services:
       TZ: Europe/Berlin
       HELLO: World!
       Foo: bar
+    labels:
+      test: injected.${TEST_PASSWORD}
     env_file: ./foo.env
     ports:
       - "12345:80"
