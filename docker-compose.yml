@@ -4,7 +4,7 @@ services:
     image: nginx
     restart: unless-stopped
     environment:
-      DB_PASSWORD: hello
+      TEST_PASSWORD: hello
       TZ: Europe/Berlin
       HELLO: World!
       Foo: bar
