@@ -10,4 +10,5 @@ services:
     labels:
       test1: inject.${TEST_PASSWORD}
       test2: ignore.$${TEST_PASSWORD}
+      a: d
     env_file: ./foo.env
