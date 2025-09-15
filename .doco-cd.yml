@@ -3,5 +3,5 @@ compose_files:
   - docker-compose.yml
 force_recreate: true
 external_secrets:
-  TEST_PASSWORD: 138e3697-ed58-431c-b866-b3550066343a  # Bitwarden Secrets Manager
-  #TEST_PASSWORD: "op://Doco-CD/Database/password" # 1Password
+  #TEST_PASSWORD: 138e3697-ed58-431c-b866-b3550066343a  # Bitwarden Secrets Manager
+  TEST_PASSWORD: "op://Doco-CD/Database/password" # 1Password
