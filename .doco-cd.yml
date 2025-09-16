@@ -5,5 +5,5 @@ force_recreate: true
 external_secrets:
   #TEST_PASSWORD: 138e3697-ed58-431c-b866-b3550066343a  # Bitwarden Secrets Manager
   TEST_PASSWORD: "op://Doco-CD/Secret Test/OTHER_SECRET" # 1Password
-  OTHER: "op://Doco-CD/Secret Test/OTHER_SECRET"
+  DB_PASSWORD: "op://Doco-CD/Database/password"
   #TEST_PASSWORD: "op://Kubernetes/basic/add more/TZ"
