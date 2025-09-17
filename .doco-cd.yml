@@ -7,3 +7,4 @@ external_secrets:
   #TEST_PASSWORD: "op://Doco-CD/Secret Test/OTHER_SECRET" # 1Password
   #DB_PASSWORD: "op://Doco-CD/Database/password" # 1Password
   TEST_PASSWORD: "arn:aws:secretsmanager:eu-west-1:243238513853:secret:doco-cd_test-NDVGN4/password"
+  OTHER_PASSWORD: "arn:aws:secretsmanager:eu-west-1:243238513853:secret:doco-cd_test-NDVGN4"
