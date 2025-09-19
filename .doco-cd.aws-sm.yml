@@ -5,3 +5,4 @@ force_recreate: true
 external_secrets:
   TEST_PASSWORD: "arn:aws:secretsmanager:eu-west-1:243238513853:secret:test-RAbPpz/password"
   OTHER_PASSWORD: "arn:aws:secretsmanager:eu-west-1:243238513853:secret:test-RAbPpz"
+  USERNAME: arn:aws:secretsmanager:eu-west-1:243238513853:secret:test-RAbPpz/username
