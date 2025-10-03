@@ -25,7 +25,6 @@ services:
       - secret.txt
     env_file:
       - .env
-      - test.enc.env
     labels:
       this: "test"
     networks:
