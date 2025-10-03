@@ -4,7 +4,10 @@ services:
     restart: unless-stopped
     deploy:
       mode: replicated
-      replicas: 3
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == worker
     environment:
       TZ: Europe/Berlin
       SOME: Value
@@ -27,12 +30,6 @@ services:
       this: "test"
     networks:
       test:
-    healthcheck:
-      interval: 30s
-      timeout: 3s
-      start_period: 10s
-      retries: 3
-      test: "curl 127.0.0.1:80"
 
 volumes:
   test:
