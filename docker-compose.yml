@@ -1,6 +1,6 @@
 services:
   test:
-    image: git.prod.maki-it.de/web/nginx-brotli:853e6958 # nginx
+    image: nginx
     restart: unless-stopped
     deploy:
       mode: replicated
