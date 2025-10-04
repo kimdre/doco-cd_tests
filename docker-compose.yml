@@ -1,6 +1,6 @@
 services:
   test:
-    image: ngfiodngdfonfdg #nginx
+    image: bash #nginx
     restart: unless-stopped
     deploy:
       mode: replicated
