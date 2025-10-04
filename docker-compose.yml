@@ -1,6 +1,6 @@
 services:
   test:
-    image: nginx:stable-bookworm #nginx
+    image: gfdggfgdgfgfd #nginx
     restart: unless-stopped
     deploy:
       mode: replicated
