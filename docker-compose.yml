@@ -10,7 +10,7 @@ services:
       SOME: Value
       id: dsdsd
       replica_slot: "{{.Task.Slot}}" 
-      interpolate_test: injext.$VAR_INTERPOLATE
+      interpolate_test: $VAR_INTERPOLATE
     ports:
       - "80" # Allocate random port on host
     volumes:
