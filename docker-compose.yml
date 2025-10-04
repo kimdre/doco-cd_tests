@@ -1,6 +1,6 @@
 services:
   test:
-    image: bash:latest #nginx
+    image: nginx:stable-bookworm #nginx
     restart: unless-stopped
     deploy:
       mode: replicated
