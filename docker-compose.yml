@@ -1,6 +1,6 @@
 services:
   test:
-    image: bash #nginx
+    image: bash:latest #nginx
     restart: unless-stopped
     deploy:
       mode: replicated
