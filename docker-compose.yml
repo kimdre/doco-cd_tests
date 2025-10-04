@@ -1,6 +1,6 @@
 services:
   test:
-    image: gfdggfgdgfgfd #nginx
+    image: nginx
     restart: unless-stopped
     deploy:
       mode: replicated
