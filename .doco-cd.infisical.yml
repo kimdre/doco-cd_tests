@@ -3,6 +3,6 @@ compose_files:
   - docker-compose.yml
 force_recreate: true
 external_secrets:
-  TEST_PASSWORD: 0db45926-c97c-40d4-a3aa-fefd5d5fb492:dev:TEST_KEY
+  TEST_PASSWORD: 0db45926-c97c-40d4-a3aa-fefd5d5fb492:dev:FOO
   OTHER_PASSWORD: "0db45926-c97c-40d4-a3aa-fefd5d5fb492:dev:/Test/Sub/TEST_SECRET"
   USERNAME: 0db45926-c97c-40d4-a3aa-fefd5d5fb492:dev:Test/Sub/TEST_SECRET
