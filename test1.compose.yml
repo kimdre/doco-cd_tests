@@ -1,0 +1,10 @@
+services:
+  test:
+    image: nginx
+    restart: unless-stopped
+    environment:
+      TZ: Europe/Berlin
+    ports:
+      - "12346:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
