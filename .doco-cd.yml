@@ -11,4 +11,4 @@ compose_files:
 ---
 name: test3
 compose_files:
-  - test1.compose.yml
+  - test3.compose.yml
