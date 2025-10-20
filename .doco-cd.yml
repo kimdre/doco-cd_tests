@@ -1,6 +1,14 @@
-name: test-deploy
+name: test1
+compose_files:
+  - test1.compose.yml
+---
+name: test2
 #reference: main
 compose_files:
-  - docker-compose.yml
+  - test2.compose.yml
 #force_recreate: false
 # main
+---
+name: test3
+compose_files:
+  - test1.compose.yml
