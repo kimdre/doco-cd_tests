@@ -8,6 +8,10 @@ services:
       TZ: Europe/Berlin
       SOME: Value
       id: dsdsd
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.webhook.entrypoints=websecure
+      - traefik.http.routers.webhook.tls.certresolver=le
     ports:
       - "12345:80"
     volumes:
