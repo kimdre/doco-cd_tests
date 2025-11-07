@@ -2,8 +2,8 @@ name: test-deploy
 #reference: main
 compose_files:
   - docker-compose.yml
-env_files:
-  - base.env
-  - prod.env
+#env_files:
+#  - base.env
+#  - prod.env
 #force_recreate: false
 # main
