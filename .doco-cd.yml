@@ -3,6 +3,7 @@ name: test-deploy
 compose_files:
   - docker-compose.yml
 env_files:
+  - test.enc.env
   - base.env
   - prod.env
 #force_recreate: false
