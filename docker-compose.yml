@@ -14,6 +14,7 @@ services:
       - traefik.http.routers.webhook.tls.certresolver=le
       - stage=$STAGE
       - name=$NAME
+      - hello=$HELLO
     ports:
       - "12345:80"
     volumes:
