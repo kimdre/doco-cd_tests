@@ -2,7 +2,7 @@ name: test-deploy
 #reference: main
 compose_files:
   - docker-compose.yml
-env_files: []
+env_files: ["bla.env"]
 #  - test.enc.env
 #  - base.env
 #  - prod.env
