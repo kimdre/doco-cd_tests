@@ -12,6 +12,8 @@ services:
       - traefik.enable=true
       - traefik.http.routers.webhook.entrypoints=websecure
       - traefik.http.routers.webhook.tls.certresolver=le
+      - stage=$STAGE
+      - name=$NAME
     ports:
       - "12345:80"
     volumes:
