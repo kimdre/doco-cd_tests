@@ -9,8 +9,9 @@ services:
       HELLO: World!
       Foo: bar
     labels:
-      test1: inject.${TEST_PASSWORD}
+      test1test1: inject.${TEST_PASSWORD}
       test2: ignore.$${TEST_PASSWORD}
       other: $OTHER_PASSWORD
+      username: $USERNAME
       a: d
     env_file: ./foo.env
