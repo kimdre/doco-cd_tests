@@ -1,0 +1,8 @@
+name: test-deploy
+compose_files:
+  - docker-compose.yml
+force_recreate: true
+external_secrets:
+  TEST_PASSWORD: secret:mysecret:password
+  OTHER_PASSWORD: "secret:mysecret:password"
+  USERNAME: secret:mysecret:username
