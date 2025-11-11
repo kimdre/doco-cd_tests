@@ -6,4 +6,4 @@ external_secrets:
   TEST_PASSWORD: secret:mysecret:password
   OTHER_PASSWORD: "secret:mysecret:password"
   USERNAME: secret:mysecret:username
-  CERT: pki:cert:example-dot-internal
+  CERT: pki:cert:test.example.internal
