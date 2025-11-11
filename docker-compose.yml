@@ -21,4 +21,5 @@ services:
 
 configs:
   test.crt:
-    environment: CERT
+    #environment: CERT
+    content: $CERT
