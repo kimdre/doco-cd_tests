@@ -15,3 +15,7 @@ services:
       username: $USERNAME
       a: d
     env_file: ./foo.env
+
+configs:
+  test.crt:
+    environment: "$CERT"
