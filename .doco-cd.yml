@@ -1,3 +1,4 @@
+name: apps
 reference: main
 autodiscover: true
 working_dir: apps/
