@@ -2,7 +2,10 @@ volumes:
   test:
 
 services:
-  app:
+  app-1:
     image: nginx
     volumes:
       - test:/test
+
+  app2:
+    image: nginx
