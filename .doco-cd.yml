@@ -1,4 +1,3 @@
-name: apps
 auto_discover: true
 working_dir: apps/
 force_recreate: true
