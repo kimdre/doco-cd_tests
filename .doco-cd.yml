@@ -3,4 +3,4 @@ auto_discover: true
 force_recreate: true
 auto_discover_opts:
   depth: 1
-  delete: true
+  delete: false
