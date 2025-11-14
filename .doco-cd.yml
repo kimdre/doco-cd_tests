@@ -4,3 +4,5 @@ repository_url: https://github.com/kimdre/doco-cd.git
 working_dir: test
 compose_files:
   - test.compose.yaml
+env_files:
+  - local:.env
