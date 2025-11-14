@@ -5,5 +5,5 @@ working_dir: test
 compose_files:
   - test.compose.yaml
 env_files:
-  - local:base.env
-  - test.env
+  - base.env
+  - remote:test.env
