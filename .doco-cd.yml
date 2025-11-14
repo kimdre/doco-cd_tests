@@ -2,4 +2,4 @@ working_dir: apps/
 auto_discover: true
 auto_discover_opts:
   depth: 2
-  delete: true
+  delete: false
