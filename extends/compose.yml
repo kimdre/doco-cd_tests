@@ -1,4 +1,0 @@
-services:
-  test:
-    environment:
-      extend: 'true'
