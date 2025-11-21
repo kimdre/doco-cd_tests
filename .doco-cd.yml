@@ -1,5 +1,6 @@
 name: test-deploy
 #reference: main
+working_dir: app
 compose_files:
   - docker-compose.yml
 env_files:

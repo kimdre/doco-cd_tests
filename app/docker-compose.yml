@@ -1,6 +1,9 @@
 services:
   test:
     #scale: 1
+    extends:
+      file: extends/compose.yml
+      service: test
     container_name: test
     image: nginx
     restart: unless-stopped
