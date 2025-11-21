@@ -1,9 +1,9 @@
 name: nginx
-working_dir: "nginx"
+working_dir: "apps/nginx"
 compose_files:
   - compose.yaml
 ---
 name: whomai
-working_dir: whoami
+working_dir: apps/whoami
 compose_files:
   - compose.yaml
