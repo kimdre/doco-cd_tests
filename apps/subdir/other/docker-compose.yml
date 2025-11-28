@@ -6,6 +6,7 @@ services:
     image: nginx
     volumes:
       - test:/test
+      - invalid:
 
   app2:
     image: nginx
