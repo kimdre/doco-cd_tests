@@ -3,4 +3,4 @@ services:
     environment:
       extend: 'true'
     labels:
-      testExtended: yo
+      testExtended: hi
