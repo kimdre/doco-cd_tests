@@ -8,6 +8,7 @@ services:
       TZ: Europe/Berlin
       SOME: Value
       id: dsdsd
+      test: yes
     labels:
       - traefik.enable=true
       - traefik.http.routers.webhook.entrypoints=websecure
