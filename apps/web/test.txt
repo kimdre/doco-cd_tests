@@ -1,1 +1,1 @@
-this is a config file!
+this is a config file.
