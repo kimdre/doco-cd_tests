@@ -1,6 +1,6 @@
 services:
   test:
-    #scale: 2
+    #scale: 1
     container_name: test
     image: nginx
     restart: unless-stopped
