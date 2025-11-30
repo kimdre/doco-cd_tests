@@ -2,3 +2,5 @@ services:
   test:
     environment:
       extend: 'true'
+    labels:
+      testExtended: hi
