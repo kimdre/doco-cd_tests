@@ -2,7 +2,7 @@ services:
   test:
     #scale: 1
     container_name: test 
-    image: nginx:latest # 1.29.3
+    image: nginx:1.29.2 # 1.29.3
     restart: unless-stopped
     environment:
       TZ: Europe/Berlin
