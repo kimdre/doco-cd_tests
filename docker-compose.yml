@@ -7,6 +7,9 @@ services:
       replicas: 1
       restart_policy:
         condition: any
+      placement:
+        constraints:
+          - node.role == manager
     environment:
       TZ: Europe/Berlin
       SOME: Value
