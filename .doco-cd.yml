@@ -1,6 +1,7 @@
 name: test-deploy
 reference: main
 repository_url: https://github.com/kimdre/doco-cd.git
+working_dir: test
 compose_files:
   - test.compose.yaml
 env_files:
@@ -10,6 +11,7 @@ env_files:
 name: test-deploy2
 reference: main
 repository_url: https://github.com/kimdre/doco-cd.git
+working_dir: test
 compose_files:
   - test.compose.yaml
 env_files:
