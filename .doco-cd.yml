@@ -6,4 +6,4 @@ env_files:
   - .env
 #force_recreate: false
 prune_images: true
-force_image_pull: false
+force_image_pull: true
