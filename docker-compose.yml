@@ -1,6 +1,4 @@
 services:
-  test2:
-    image: nginx:latest
   test:
     #scale: 1
     container_name: test 
