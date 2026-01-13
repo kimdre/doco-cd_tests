@@ -22,4 +22,4 @@ services:
 configs:
   test.crt:
     #environment: CERT
-    content: $CERT
+    content: ${CERT:-empty}
