@@ -1,3 +1,3 @@
-[submodule "doco-cd"]
-	path = doco-cd
-	url = https://github.com/kimdre/doco-cd.git
+[submodule "doco-cd_tests"]
+	path = doco-cd_tests
+	url = https://github.com/kimdre/doco-cd_tests.git

@@ -19,7 +19,7 @@ services:
       - test:/test
     configs:
       - test.txt
-      - doco-cd-LICENSE
+      - doco-cd-README.md
     secrets:
       - secret.txt
     env_file:
@@ -43,8 +43,8 @@ networks:
 configs:
   test.txt:
     file: test.txt
-  doco-cd-LICENSE:
-    file: doco-cd/LICENSE
+  doco-cd-README.md:
+    file: doco-cd_tests/README.md
 
 secrets:
   secret.txt:
