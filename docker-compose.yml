@@ -15,9 +15,9 @@ services:
       username: $USERNAME
       a: d
     env_file: ./foo.env
-    configs:
-      - source: test.crt
-        target: /test.crt
+    #configs:
+    #  - source: test.crt
+    #    target: /test.crt
 
 configs:
   test.crt:
