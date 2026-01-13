@@ -1,0 +1,3 @@
+[submodule "doco-cd"]
+	path = doco-cd
+	url = https://github.com/kimdre/doco-cd.git
