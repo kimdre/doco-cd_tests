@@ -10,14 +10,14 @@ services:
         echo starting pre-deployment script
         echo "Do something with your files" > pre-deploy.txt 
         echo finished pre-deployment script
-      - | # Write healthcheck target file
-        echo "healthy" > /tmp/health_status
-        sleep 30
-    healthcheck:
-      test: ["CMD", "grep", "healthy", "/tmp/health_status"]
-      interval: 1s
-      timeout: 10s
-      retries: 10
+     # - | # Write healthcheck target file
+     #   echo "healthy" > /tmp/health_status
+     #   sleep 30
+    #healthcheck:
+    #  test: ["CMD", "grep", "healthy", "/tmp/health_status"]
+    #  interval: 1s
+    #  timeout: 10s
+    #  retries: 10
 
   app:
     image: nginx
@@ -25,4 +25,4 @@ services:
       - .:/data:ro
     depends_on:
       init:
-        condition: service_healthy
+        condition: service_completed_successfully
