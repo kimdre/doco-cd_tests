@@ -1,19 +1,19 @@
 x-common-env: &common-env
-    MYVAR: foo
+    MYVAR: world
 
 services:
   init:
     image: busybox
     environment:
       <<: *common-env
-    entrypoint: "sh -c" 
+    #entrypoint: "sh -c" 
     volumes:
       - ./web:/web
     working_dir: /web
     command:
       - |
         echo Starting pre-deployment script
-        echo "Hello $${MYVAR}!" > /web/index.html
+        echo "Hello $${MYVAR}!" > /web/index.html # Double dollar-sign is required here to use the variable in the shell script 
         echo Finished pre-deployment script
 
   app:
