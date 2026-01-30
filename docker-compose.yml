@@ -1,48 +1,14 @@
 services:
-  test:
-    #scale: 1
-    container_name: test 
-    image: nginx:latest # 1.29.3
-    restart: unless-stopped
-    environment:
-      TZ: Europe/Berlin
-      SOME: Value
-      id: dsdsdsd
-    labels:
-      - traefik.enable=true
-      - traefik.http.routers.webhook.entrypoints=websecure
-      - traefik.http.routers.webhook.tls.certresolver=le
-    ports:
-      - "12345:80"
-    volumes:
-      - ./html:/usr/share/nginx/html
-      - test:/test
-    configs:
-      - test.txt
-    secrets:
-      - secret.txt
-    env_file:
-      - .env
-      - test.enc.env
-    networks:
-      test:
+  init:
+    image: busybox
+    command: ["sh", "-c", "echo pre-deployment script; sleep 2"]
     healthcheck:
-      interval: 30s
-      timeout: 3s
-      start_period: 10s
-      retries: 3
-      test: "curl 127.0.0.1:80"
+      test: ["CMD", "true"]
+      interval: 1s
+      retries: 1
 
-volumes:
-  test:
-
-networks:
-  test:
-
-configs:
-  test.txt:
-    file: test.txt
-
-secrets:
-  secret.txt:
-    file: secret.txt
+  app:
+    image: nginx
+    depends_on:
+      init:
+        condition: service_healthy
