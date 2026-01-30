@@ -12,7 +12,7 @@ services:
         echo finished pre-deployment script
       - | # Write healthcheck target file
         echo "healthy" > /tmp/health_status
-        sleep 10
+        sleep 30
     healthcheck:
       test: ["CMD", "grep", "healthy", "/tmp/health_status"]
       interval: 1s
