@@ -10,7 +10,7 @@ services:
       - ./web:/web
     working_dir: /web
     command:
-      - echo "Hello $MYVAR" > /web/index.html
+      - echo "Hello $MYVAR" > index.html
 
   app:
     image: nginx
