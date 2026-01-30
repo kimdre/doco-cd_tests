@@ -6,7 +6,7 @@ services:
     image: busybox
     environment:
       <<: *common-env
-    #entrypoint: "sh -c" 
+    entrypoint: "sh -c" 
     volumes:
       - ./web:/web
     working_dir: /web
