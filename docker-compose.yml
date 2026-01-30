@@ -3,20 +3,26 @@ services:
     image: busybox
     entrypoint: "sh -c"
     volumes:
-      - .:/data 
+      - .:/data
+    working_dir: /data
     command:
-      - |
-        echo pre-deployment script
-        cd /data
-        echo "Do something with files" > pre-deploy.txt 
-        sleep 10  # Wait a little so that the healthcheck can turn 'healthy' before exiting container
+      - | # Run your pre-deployment script
+        echo starting pre-deployment script
+        echo "Do something with your files" > pre-deploy.txt 
+        echo finished pre-deployment script
+      - | # Write healthcheck target file
+        echo "healthy" > /tmp/health_status
+        sleep 3
     healthcheck:
-      test: ["CMD", "true"]
+      test: ["CMD", "grep", "healthy", "/tmp/health_status"]
       interval: 1s
-      retries: 1
+      timeout: 10s
+      retries: 10
 
   app:
     image: nginx
+    volumes:
+      - .:/data:ro
     depends_on:
       init:
         condition: service_healthy
