@@ -1,7 +1,7 @@
 services:
   init:
     image: busybox
-    command: ["sh", "-c", "echo pre-deployment script; sleep 2"]
+    command: ["sh", "-c", "echo pre-deployment script; sleep 2; tail -f /dev/null"]
     healthcheck:
       test: ["CMD", "true"]
       interval: 1s
