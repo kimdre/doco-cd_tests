@@ -1,28 +1,22 @@
 services:
   init:
     image: busybox
-    entrypoint: "sh -c"
+    entrypoint: "sh -c" 
     volumes:
-      - .:/data
-    working_dir: /data
+      - ./web:/web
+    working_dir: /web
     command:
       - | # Run your pre-deployment script
         echo starting pre-deployment script
-        echo "Do something with your files" > pre-deploy.txt 
+        echo "Hello World!" > /web/index.html
         echo finished pre-deployment script
-     # - | # Write healthcheck target file
-     #   echo "healthy" > /tmp/health_status
-     #   sleep 30
-    #healthcheck:
-    #  test: ["CMD", "grep", "healthy", "/tmp/health_status"]
-    #  interval: 1s
-    #  timeout: 10s
-    #  retries: 10
 
   app:
     image: nginx
     volumes:
-      - .:/data:ro
+      - ./web:/usr/share/nginx/html:ro
+    ports:
+      - 80:80
     depends_on:
       init:
         condition: service_completed_successfully
