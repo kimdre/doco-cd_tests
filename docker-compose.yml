@@ -6,15 +6,16 @@ services:
     image: busybox
     environment:
       <<: *common-env
-    entrypoint: "sh -c" 
     volumes:
       - ./web:/web
     working_dir: /web
     command:
       - |
+        sh -c "
         echo Starting pre-deployment script
         echo "Hello $MYVAR" > /web/index.html
         echo Finished pre-deployment script
+        "
 
   app:
     image: nginx
