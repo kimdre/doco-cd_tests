@@ -1,22 +1,29 @@
+x-common-env: &common-env
+    MYVAR: foo
+
 services:
   init:
     image: busybox
+    environment:
+      <<: *common-env
     entrypoint: "sh -c" 
     volumes:
       - ./web:/web
     working_dir: /web
     command:
-      - | # Run your pre-deployment script
-        echo starting pre-deployment script
-        echo "Hello World!" > /web/index.html
-        echo finished pre-deployment script
+      - |
+        echo Starting pre-deployment script
+        echo "Hello ${MYVAR}!" > /web/index.html
+        echo Finished pre-deployment script
 
   app:
     image: nginx
+    environment:
+      <<: *common-env
     volumes:
       - ./web:/usr/share/nginx/html:ro
     ports:
       - 8080:80
     depends_on:
       init:
-        condition: service_completed_successfully
+        condition: service_completed_successfully # Wait for init container to complete/stop with exit code 0
