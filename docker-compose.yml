@@ -1,7 +1,15 @@
 services:
   init:
     image: busybox
-    command: ["sh", "-c", "echo pre-deployment script; sleep 2; tail -f /dev/null"]
+    entrypoint: "sh -c"
+    volumes:
+      - .:/data 
+    command:
+      - |
+        echo pre-deployment script
+        cd /data
+        echo "Do something with files" > pre-deploy.txt 
+        sleep 10  # Wait a little so that the healthcheck can turn 'healthy' before exiting container
     healthcheck:
       test: ["CMD", "true"]
       interval: 1s
