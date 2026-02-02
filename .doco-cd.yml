@@ -1,9 +1,9 @@
 name: test-deploy
 #reference: main
-compose_files:
-  - docker-compose.yml
-env_files:
-  - .env
+#compose_files:
+#  - docker-compose.yml
+#env_files:
+#  - .env
 #force_recreate: false
-prune_images: true
-force_image_pull: false
+#prune_images: true
+#force_image_pull: false
