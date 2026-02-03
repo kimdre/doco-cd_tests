@@ -5,5 +5,5 @@ compose_files:
 env_files:
   - .env
 #force_recreate: false
-prune_images: true
-force_image_pull: false
+#prune_images: true
+#force_image_pull: false
