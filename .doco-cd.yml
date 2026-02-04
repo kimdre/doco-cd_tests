@@ -7,3 +7,6 @@ working_dir: deploy/app1
 ---
 name: app2
 working_dir: deploy/app2
+#compose_files:
+#  - docker-compose.yml
+#force_recreate: false
