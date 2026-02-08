@@ -6,3 +6,5 @@ external_secrets:
   TEST_PASSWORD: 0db45926-c97c-40d4-a3aa-fefd5d5fb492:dev:FOO
   OTHER_PASSWORD: "0db45926-c97c-40d4-a3aa-fefd5d5fb492:dev:/Test/Sub/TEST_SECRET"
   USERNAME: 0db45926-c97c-40d4-a3aa-fefd5d5fb492:dev:Test/Sub/TEST_SECRET
+  REF_TEST: c77191d4-463b-4c28-9b8d-0b4e4b6122bb:dev:Test/Sub/REF_SECRET
+  
