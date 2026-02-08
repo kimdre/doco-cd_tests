@@ -13,6 +13,7 @@ services:
       test2: ignore.$${TEST_PASSWORD}
       other: $OTHER_PASSWORD
       username: $USERNAME
+      ref_test: $REF_TEST
       a: d
     env_file: ./foo.env
     configs:
