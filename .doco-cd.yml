@@ -10,3 +10,21 @@ working_dir: deploy/app2
 #compose_files:
 #  - docker-compose.yml
 #force_recreate: false
+---
+name: app3
+working_dir: deploy/app2
+#compose_files:
+#  - docker-compose.yml
+#force_recreate: false
+---
+name: app4
+working_dir: deploy/app2
+#compose_files:
+#  - docker-compose.yml
+#force_recreate: false
+---
+name: app5
+working_dir: deploy/app2
+#compose_files:
+#  - docker-compose.yml
+#force_recreate: false
