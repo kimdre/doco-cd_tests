@@ -1,12 +1,11 @@
-name: app1
-#reference: main
-working_dir: deploy/app1
-#compose_files:
-#  - docker-compose.yml
-#force_recreate: false
+reference: dual
+working_dir: deploy
+auto_discover: true
+auto_discover_opts:
+  depth: 1
 ---
-name: app2
-working_dir: deploy/app2
-#compose_files:
-#  - docker-compose.yml
-#force_recreate: false
+reference: apps
+working_dir: autodiscover
+auto_discover: true
+auto_discover_opts:
+  depth: 1
