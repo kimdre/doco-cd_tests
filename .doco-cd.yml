@@ -3,9 +3,9 @@ working_dir: deploy/
 auto_discover: true
 auto_discover_opts:
   depth: 1
-# ---
-# reference: autodiscover
-# working_dir: apps/
-# auto_discover: true
-# auto_discover_opts:
-#   depth: 1
+---
+reference: autodiscover
+working_dir: apps/
+auto_discover: true
+auto_discover_opts:
+  depth: 1
