@@ -1,5 +1,5 @@
 name: tagged-test
-reference: v1.1.4
+reference: v1.1.5
 # dual
 #working_dir: deploy/
 # auto_discover: true
