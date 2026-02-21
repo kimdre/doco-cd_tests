@@ -1,7 +1,7 @@
 services:
   test:
     #scale: 1
-    container_name: test 
+    #container_name: test 
     image: nginx:latest # 1.29.3
     restart: unless-stopped
     environment:
