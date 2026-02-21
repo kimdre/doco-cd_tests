@@ -13,7 +13,7 @@ services:
       - traefik.http.routers.webhook.entrypoints=websecure
       - traefik.http.routers.webhook.tls.certresolver=le
     ports:
-      - "12345:80"
+      - "80"
     volumes:
       - ./html:/usr/share/nginx/html
       - test:/test
