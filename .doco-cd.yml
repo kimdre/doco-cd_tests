@@ -1,9 +1,9 @@
 name: tagged-test
 reference: dual
-#working_dir: deploy/
-# auto_discover: true
-# auto_discover_opts:
-#   depth: 1
+working_dir: deploy/
+auto_discover: true
+auto_discover_opts:
+  depth: 1
 ---
 reference: autodiscover
 working_dir: apps/
