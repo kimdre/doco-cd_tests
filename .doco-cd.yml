@@ -1,5 +1,5 @@
 name: tagged-test
-reference: 9b9a32971852d1c5e5113325e70eac269ebdf546 # dual
+reference: dual
 working_dir: deploy/
 auto_discover: true
 auto_discover_opts:
