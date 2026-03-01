@@ -12,6 +12,7 @@ services:
       - traefik.enable=true
       - traefik.http.routers.webhook.entrypoints=websecure
       - traefik.http.routers.webhook.tls.certresolver=le
+      - test=$HOSTNAME
     ports:
       - "80"
     volumes:
