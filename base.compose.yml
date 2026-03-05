@@ -1,0 +1,4 @@
+services:
+  base:
+    labels:
+      from-base: true
