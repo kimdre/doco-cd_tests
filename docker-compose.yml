@@ -1,3 +1,6 @@
+include:
+- include.compose.yml
+
 services:
   test:
     #scale: 1
