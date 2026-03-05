@@ -2,4 +2,4 @@ services:
   base:
     labels:
       from-base: true
-      trigger: 1
+      trigger: 2
