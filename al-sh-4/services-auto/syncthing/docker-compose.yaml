@@ -3,7 +3,7 @@ services:
     extends:
       file: ../../../common/syncthing/compose.yaml
       service: syncthing
-    volumes:
-      - "/data/certs/:/data/certs"
-      - "/data/backup/:/data/backup"
-      - "/data/syncthing:/var/syncthing"
+    #volumes:
+    #  - "/data/certs/:/data/certs"
+    #  - "/data/backup/:/data/backup"
+    #  - "/data/syncthing:/var/syncthing"
