@@ -11,3 +11,5 @@ services:
       - /run
     privileged: false
     devices: []
+    labels:
+      test: 1
