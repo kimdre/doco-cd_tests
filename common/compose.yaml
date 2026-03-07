@@ -1,0 +1,13 @@
+services:
+  base-secure:
+    user: "1000:1000"
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /run
+    privileged: false
+    devices: []

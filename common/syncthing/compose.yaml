@@ -1,0 +1,15 @@
+services:
+  syncthing:
+    extends:
+      file: ../compose.yaml
+      service: base-secure
+    container_name: syncthing
+    network_mode: host
+    pull_policy: always
+    restart: always
+    user: "1000:1000"
+    cap_drop:
+      - ALL
+    image: syncthing/syncthing:2.0.15@sha256:1feffa2d4826b48f25faefed093d07c5f00304d7e7ac86fd7cda334d22651643
+    environment:
+      STHOMEDIR: /var/syncthing 

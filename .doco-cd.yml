@@ -1,8 +1,2 @@
-name: test-deploy
-compose_files:
-  - docker-compose.yml
-env_files:
-  - .env
-#force_recreate: false
-#prune_images: true
-#force_image_pull: false
+name: test-1069
+working_dir: al-sh-4/services-auto/syncthing
