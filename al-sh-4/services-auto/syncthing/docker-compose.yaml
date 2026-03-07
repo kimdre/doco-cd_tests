@@ -6,7 +6,7 @@ services:
     volumes:
     #  - "/data/certs/:/data/certs"
     #  - "/data/backup/:/data/backup"
-      data:/var/syncthing"
+      - data:/var/syncthing"
 
 volumes:
   data:
