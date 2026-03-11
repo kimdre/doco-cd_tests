@@ -1,10 +1,10 @@
-name: deployA
+name: deploy-a
 compose_files:
   - docker-compose.yml
 external_secrets:
   TEST_PASSWORD: 138e3697-ed58-431c-b866-b3550066343a  # Bitwarden Secrets Manager
 ---
-name: deployB
+name: deploy-b
 compose_files:
   - docker-compose.yml
 external_secrets:
