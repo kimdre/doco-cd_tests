@@ -1,6 +1,6 @@
 services:
   test:
-    container_name: test
+    #container_name: test
     image: nginx
     restart: unless-stopped
     environment:
