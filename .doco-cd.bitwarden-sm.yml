@@ -1,6 +1,11 @@
-name: test-deploy
+name: deployA
 compose_files:
   - docker-compose.yml
-force_recreate: true
 external_secrets:
   TEST_PASSWORD: 138e3697-ed58-431c-b866-b3550066343a  # Bitwarden Secrets Manager
+---
+name: deployB
+compose_files:
+  - docker-compose.yml
+external_secrets:
+  TEST_PASSWORD: 5a232998-c5bb-447d-bdb4-b40a00ac5300  # Bitwarden Secrets Manager
