@@ -12,4 +12,4 @@ compose_files:
 external_secrets:
   TEST_PASSWORD: 5a232998-c5bb-447d-bdb4-b40a00ac5300  # Bitwarden Secrets Manager
   NEW: c625b955-bc33-4847-8536-b40a00ae1332
-  TEST2: c625b955-bc33-4847-8536-b40a00ae1332
+  FOO: 0b4b5181-d2ee-4bf5-986d-b40a0101d7dd
