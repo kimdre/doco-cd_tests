@@ -20,8 +20,11 @@ services:
     configs:
       - source: test.crt
         target: /test.crt
+      - foo
 
 configs:
   test.crt:
     #environment: CERT
     content: ${CERT:-empty}
+  foo:
+    file: foo.txt
