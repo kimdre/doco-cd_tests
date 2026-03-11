@@ -9,4 +9,4 @@ compose_files:
   - docker-compose.yml
 external_secrets:
   TEST_PASSWORD: 5a232998-c5bb-447d-bdb4-b40a00ac5300  # Bitwarden Secrets Manager
-  NEW: c625b955-bc33-4847-8536-b40a00ae1332
+  NEW2: c625b955-bc33-4847-8536-b40a00ae1332
