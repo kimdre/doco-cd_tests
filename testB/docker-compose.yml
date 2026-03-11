@@ -17,7 +17,7 @@ services:
       a: d
       new: $NEW
     volumes:
-      ./test.txt:/test.txt
+      - ./test.txt:/test.txt
     env_file: ./foo.env
     configs:
       - source: test.crt
