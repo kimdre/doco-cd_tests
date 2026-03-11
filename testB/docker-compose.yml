@@ -23,6 +23,9 @@ services:
       - source: test.crt
         target: /test.crt
       - foo
+    secrets:
+      - cert
+
 
 configs:
   test.crt:
@@ -30,3 +33,7 @@ configs:
     content: ${CERT:-empty}
   foo:
     file: foo.txt
+
+secrets:
+  cert:
+    file: ./server.cert
