@@ -3,7 +3,7 @@ working_dir: testA
 compose_files:
   - docker-compose.yml
 external_secrets:
-  CERT: 138e3697-ed58-431c-b866-b3550066343a  # Bitwarden Secrets Manager
+  TEST_PASSWORD: 138e3697-ed58-431c-b866-b3550066343a  # Bitwarden Secrets Manager
 ---
 name: deploy-b
 working_dir: testB
