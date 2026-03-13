@@ -6,7 +6,7 @@ services:
     volumes:
       - frontend_static:/static
     entrypoint: ["/bin/sh", "-c"]
-    command: ["rm -rf /static/* && touch /static/index.html"]
+    command: ["rm -rf /static/* && date > /static/index.html"]
  
   nginx:
     image: nginx
