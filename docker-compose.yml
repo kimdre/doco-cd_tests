@@ -1,55 +1,25 @@
-include:
-- include.compose.yml
-
 services:
-  test:
-    #scale: 1
-    #container_name: test 
-    extends:
-      file: base.compose.yml
-      service: base
-    image: nginx:latest # 1.29.3
-    restart: unless-stopped
-    environment:
-      TZ: Europe/Berlin
-      SOME: Value
-      id: 5
-    labels:
-      - traefik.enable=true
-      - traefik.http.routers.webhook.entrypoints=websecure
-      - traefik.http.routers.webhook.tls.certresolver=le
-      - test=$HOST_HOSTNAME
-    ports:
-      - "80"
+  frontend-init:
+    image: nginx
+    container_name: frontend-init
+    restart: "no"
+    user: "0"
     volumes:
-      - ./html:/usr/share/nginx/html
-      - test:/test
-    configs:
-      - test.txt
-    secrets:
-      - secret.txt
-    env_file:
-      - .env
-      - test.enc.env
-    networks:
-      test:
-    healthcheck:
-      interval: 30s
-      timeout: 3s
-      start_period: 10s
-      retries: 3
-      test: "curl 127.0.0.1:80"
-
+      - frontend_static:/static
+    entrypoint: ["/bin/sh", "-c"]
+    command: ["echo test && cp -a /tmp/. /tmp-new/"]
+ 
+  nginx:
+    image: nginx
+    container_name: nginx
+    restart: unless-stopped
+    volumes:
+      - frontend_static:/usr/share/nginx/html:ro
+    ports:
+      - "443:443"
+    depends_on:
+      frontend-init:
+        condition: service_completed_successfully
+ 
 volumes:
-  test:
-
-networks:
-  test:
-
-configs:
-  test.txt:
-    file: test.txt
-
-secrets:
-  secret.txt:
-    file: secret.txt
+  frontend_static:

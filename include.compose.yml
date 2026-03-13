@@ -1,5 +1,0 @@
-services:
-  included:
-    image: nginx:latest
-    labels:
-      included: 2
