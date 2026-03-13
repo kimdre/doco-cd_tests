@@ -1,6 +1,6 @@
 services:
   frontend-init:
-    image: nginx
+    image: nginx:alpine
     container_name: frontend-init
     restart: "no"
     user: "0"
@@ -10,7 +10,7 @@ services:
     command: ["rm -rf /static/* && date > /static/index.html"]
  
   nginx:
-    image: nginx
+    image: nginx:alpine
     container_name: nginx
     restart: unless-stopped
     volumes:
