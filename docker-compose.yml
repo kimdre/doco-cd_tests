@@ -6,7 +6,7 @@ services:
     volumes:
       - frontend_static:/static
     entrypoint: ["/bin/sh", "-c"]
-    command: ["touch /tmp/foo && cp -a /tmp/* /static/ && rm -rf /static/foo"]
+    command: ["rm -rf /static/* && touch /static/index.html"]
  
   nginx:
     image: nginx
