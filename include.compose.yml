@@ -2,4 +2,4 @@ services:
   included:
     image: nginx:latest
     labels:
-      included: 1
+      included: 2
