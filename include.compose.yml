@@ -6,4 +6,4 @@ services:
   other:
     image: nginx:latest
     labels:
-      included: 2
+      included: 1
