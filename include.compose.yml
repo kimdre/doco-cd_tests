@@ -3,7 +3,13 @@ services:
     image: nginx:latest
     labels:
       included: 10
+    configs:
+      - include.conf
   other:
     image: nginx:latest
     labels:
       included: 1
+
+configs:
+  include.conf:
+    file: include.conf
