@@ -3,3 +3,7 @@ services:
     image: nginx:latest
     labels:
       included: 10
+  other:
+    image: nginx:latest
+    labels:
+      included: 1
