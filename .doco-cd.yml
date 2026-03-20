@@ -1,5 +1,5 @@
 name: test-stack
-reference: refs/heads/main
+reference: refs/heads/1115
 compose_files:
   - docker-compose.yml
 force_image_pull: true
