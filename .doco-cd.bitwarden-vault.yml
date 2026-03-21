@@ -3,4 +3,4 @@ compose_files:
   - docker-compose.yml
 force_recreate: true
 external_secrets:
-  TEST_PASSWORD: 191b1039-1f99-4714-9119-b358014cf74e  # Bitwarden Secrets Manager
+  TEST_PASSWORD: 7293a970-2834-4490-a2c9-b41400c9295f  # Bitwarden Vault
