@@ -40,6 +40,15 @@ services:
       retries: 3
       test: "curl 127.0.0.1:80"
 
+  other:
+    test:
+    image: nginx
+    deploy:
+      mode: replicated
+      replicas: 1
+    labels:
+      id: 1
+    
 volumes:
   test:
 
