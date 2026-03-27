@@ -46,7 +46,7 @@ services:
       mode: replicated
       replicas: 1
     labels:
-      id: 2
+      id: 3
     
 volumes:
   test:
