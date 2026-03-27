@@ -41,7 +41,7 @@ services:
       test: "curl 127.0.0.1:80"
 
   other:
-    image: nginx
+    image: nginx:1.28-alpine
     deploy:
       mode: replicated
       replicas: 1
