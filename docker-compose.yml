@@ -41,7 +41,6 @@ services:
       test: "curl 127.0.0.1:80"
 
   other:
-    test:
     image: nginx
     deploy:
       mode: replicated
