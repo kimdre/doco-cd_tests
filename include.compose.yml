@@ -9,6 +9,14 @@ services:
     image: nginx:latest
     labels:
       included: 1
+      cd.doco.deployment.recreate.ignore-block: |
+        configs:
+          - app
+          - nginx
+        secrets:
+          - db
+        bindMounts:
+          - /etc/caddy
 
 configs:
   include.conf:
