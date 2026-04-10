@@ -19,6 +19,7 @@ services:
       - traefik.http.routers.webhook.entrypoints=websecure
       - traefik.http.routers.webhook.tls.certresolver=le
       - test=$HOST_HOSTNAME
+      - inline.env=$INLINE_ENV
     ports:
       - "80"
     volumes:
