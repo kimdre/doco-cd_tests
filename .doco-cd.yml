@@ -4,7 +4,6 @@ compose_files:
   - docker-compose.yml
 env_files:
   - .env
-git_depth: 2
 environment:
   INLINE_ENV: hi
 #force_recreate: false
