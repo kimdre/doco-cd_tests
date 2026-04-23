@@ -4,6 +4,7 @@ x-common-env: &common-env
 services:
   init:
     image: busybox
+    restart: on-failure:3
     environment:
       <<: *common-env
     entrypoint: "sh -c" 
