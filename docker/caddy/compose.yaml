@@ -1,0 +1,12 @@
+services:
+  caddy:
+    container_name: caddy
+    image: caddy-custom:${CADDY_VERSION}
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        CADDY_VERSION: ${CADDY_VERSION}
+    restart: unless-stopped
+    env_file: 
+    - .env
