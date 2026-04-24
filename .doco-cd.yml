@@ -1,3 +1,3 @@
 name: caddy
-reference: playground
+#reference: playground
 working_dir: caddy
