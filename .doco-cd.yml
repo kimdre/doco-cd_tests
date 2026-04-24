@@ -8,4 +8,4 @@ environment:
   INLINE_ENV: hi
 #force_recreate: false
 #prune_images: true
-#force_image_pull: false
+force_image_pull: true
