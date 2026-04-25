@@ -1,5 +1,6 @@
 services:
   base:
+    restart: unless-stopped
     labels:
       from-base: true
       trigger: 2
