@@ -1,12 +1,14 @@
 services:
   included:
     image: nginx:latest
+    restart: unless-stopped
     labels:
       included: 10
     configs:
       - include.conf
   other:
     image: nginx:latest
+    restart: unless-stopped
     labels:
       included: 2
       cd.doco.deployment.recreate.ignore: >-
