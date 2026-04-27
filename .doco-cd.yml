@@ -1,3 +1,7 @@
 name: test
-force_image_pull: true
-remove_orphans: true
+reconciliation:
+  enabled: true
+  events:
+    - die
+    - destroy
+    - unhealthy
