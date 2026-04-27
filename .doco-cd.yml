@@ -1,6 +1,9 @@
 name: test
 reconciliation:
   enabled: true
+  restart_timeout: 30
+  restart_limit: 3
+  restart_window: 300
   events:
     - die
     - destroy
