@@ -5,3 +5,8 @@ compose_files:
 env_files:
   - .env
 destroy: false
+reconciliation:
+  enabled: true
+  events:
+    - destroy
+    - unhealthy
