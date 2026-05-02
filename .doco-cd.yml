@@ -14,8 +14,8 @@ reconciliation:
   restart_timeout: 10
   restart_limit: 5
   restart_window: 300
-  # events:
-  #   - stop
-  #   - destroy
-  #   - unhealthy
-  #   - oom
+  events:
+    - stop
+    - destroy
+    - unhealthy
+    - oom
