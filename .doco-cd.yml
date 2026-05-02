@@ -15,8 +15,8 @@ reconciliation:
   restart_limit: 5
   restart_window: 300
   events:
-    - stop
-    - die
-    #- destroy
+    #- stop
+    #- die
+    - destroy
     - unhealthy
     #- oom
