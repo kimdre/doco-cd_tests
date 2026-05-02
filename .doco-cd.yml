@@ -16,6 +16,7 @@ reconciliation:
   restart_window: 300
   events:
     - stop
+    - die
     - destroy
     - unhealthy
     - oom
