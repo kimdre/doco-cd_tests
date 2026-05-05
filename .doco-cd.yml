@@ -4,7 +4,8 @@ compose_files:
   - docker-compose.yml
 env_files:
   - .env
-destroy: false
+destroy: 
+  enable: false
 reconciliation:
   enabled: true
   events:
