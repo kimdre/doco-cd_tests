@@ -9,6 +9,8 @@ services:
       SOME: Value
       id: dsdsda
       test: true
+      base: $BASE
+      nested: $SUB
     labels:
       - traefik.enable=true
       - traefik.http.routers.webhook.entrypoints=websecure
