@@ -8,13 +8,13 @@ services:
       TZ: Europe/Berlin
       SOME: Value
       id: dsdsda
-      test: true
-      base: $BASE
-      nested: $SUB
+      test: 
     labels:
       - traefik.enable=true
       - traefik.http.routers.webhook.entrypoints=websecure
       - traefik.http.routers.webhook.tls.certresolver=le
+      - base=$BASE
+      - nested=$SUB
     ports:
       - "12345:80"
     volumes:
