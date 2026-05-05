@@ -3,7 +3,7 @@ reference: refs/heads/destroy
 compose_files:
   - docker-compose.yml
 force_recreate: true
-destroy: true
-destroy_opts:
+destroy:
+  enable: true
   remove_volumes: true
   remove_dir: true
