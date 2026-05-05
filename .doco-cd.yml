@@ -1,6 +1,6 @@
 working_dir: apps/
-auto_discover: true
-auto_discover_opts:
+auto_discovery:
+  enable: true
   depth: 3
   delete: true
 environment:
