@@ -4,6 +4,6 @@ compose_files:
   - docker-compose.yml
 force_recreate: true
 destroy:
-  enable: false
+  enable: true
   remove_volumes: true
   remove_dir: true
