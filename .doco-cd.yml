@@ -1,7 +1,7 @@
 working_dir: apps/
 auto_discovery:
   enable: true
-  depth: 3
+  depth: 2
   delete: true
 environment:
   BASE: base
