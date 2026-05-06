@@ -5,7 +5,7 @@ compose_files:
 env_files:
   - .env
 destroy: 
-  enable: false
+  enabled: false
 reconciliation:
   enabled: true
   events:
