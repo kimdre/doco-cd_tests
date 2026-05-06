@@ -1,2 +1,3 @@
 environment:
   SUB: sub
+destroy: true
