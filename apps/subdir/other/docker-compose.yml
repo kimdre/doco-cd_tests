@@ -4,6 +4,8 @@ volumes:
 services:
   app-1:
     image: nginx
+    labels:
+      id: 1
     volumes:
       - test:/test
 
