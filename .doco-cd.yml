@@ -9,6 +9,7 @@ environment:
 #force_recreate: false
 #prune_images: true
 force_image_pull: false
+destroy: true
 reconciliation:
   enabled: true
   restart_timeout: 10
