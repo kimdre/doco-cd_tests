@@ -4,7 +4,7 @@ destroy: false
 auto_discovery:
   enable: true
   depth: 2
-  delete: true
+  delete: false
 # auto_discover: true
 # auto_discover_opts:
 #   depth: 2
