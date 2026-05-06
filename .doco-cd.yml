@@ -10,9 +10,9 @@ environment:
 #prune_images: true
 force_image_pull: false
 destroy:
-  enable: false
+  enable: true
   remove_volumes: true
-  remove_images: false
+  remove_images: true
   remove_dir: true
 reconciliation:
   enabled: true
