@@ -9,11 +9,6 @@ environment:
 #force_recreate: false
 #prune_images: true
 force_image_pull: false
-destroy:
-  enable: true
-  remove_volumes: true
-  remove_images: true
-  remove_dir: true
 reconciliation:
   enabled: true
   restart_timeout: 10
