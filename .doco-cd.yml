@@ -1,4 +1,5 @@
 working_dir: apps/
+destroy: true
 auto_discovery: true
 # auto_discovery:
 #   enable: true
