@@ -10,10 +10,10 @@ environment:
 #prune_images: true
 force_image_pull: false
 destroy:
-  enable: false
+  enable: true
   remove_volumes: true
   remove_images: false
-  remove_dir: false
+  remove_dir: true
 reconciliation:
   enabled: true
   restart_timeout: 10
