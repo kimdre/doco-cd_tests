@@ -1,10 +1,10 @@
 working_dir: apps/
-destroy: true
-auto_discovery: true
-# auto_discovery:
-#   enable: true
-#   depth: 2
-#   delete: true
+destroy: false
+# auto_discovery: true
+auto_discovery:
+  enable: true
+  depth: 2
+  delete: true
 # auto_discover: true
 # auto_discover_opts:
 #   depth: 2
