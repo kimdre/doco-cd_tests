@@ -2,6 +2,9 @@ services:
   test:
     image: bash:latest
     restart: no
+    deploy:
+      restart_policy:
+        condition: any
     entrypoint: ["sh", "-ec"]
     environment:
       TZ: Europe/Berlin
