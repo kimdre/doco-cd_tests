@@ -1,6 +1,3 @@
-include:
-- include.compose.yml
-
 services:
   test:
     image: busybox:latest
