@@ -3,6 +3,7 @@ services:
     image: bash:latest
     restart: no
     deploy:
+      mode: global
       restart_policy:
         condition: none
     entrypoint: ["sh", "-ec"]
