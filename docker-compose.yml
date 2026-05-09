@@ -6,11 +6,11 @@ services:
     environment:
       TZ: Europe/Berlin
     volumes:
-      - /tmp/test.txt:/tmp/test.txt
+      - /tmp/test/:/tmp/test/
     command:
       - |
-        echo "Hello world!" >> /tmp/test.txt
-        date >> /tmp/test.txt
+        echo "Hello world!" >> /tmp/test/test.txt
+        date >> /tmp/test/test.txt
     labels:
       cd.doco.job.enabled: "true"
       cd.doco.job.schedule: "@every 10s"
