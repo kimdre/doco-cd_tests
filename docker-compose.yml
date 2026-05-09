@@ -5,10 +5,12 @@ services:
     entrypoint: ["sh", "-ec"]
     environment:
       TZ: Europe/Berlin
+    volumes:
+      - /tmp/test.txt:/tmp/test.txt
     command:
       - |
-        echo "Hello world!"
-        date
+        echo "Hello world!" >> /tmp/test.txt
+        date >> /tmp/test.txt
     labels:
       cd.doco.job.enabled: "true"
       cd.doco.job.schedule: "@every 10s"
