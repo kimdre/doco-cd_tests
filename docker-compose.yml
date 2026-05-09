@@ -4,7 +4,7 @@ services:
     restart: no
     deploy:
       restart_policy:
-        condition: any
+        condition: none
     entrypoint: ["sh", "-ec"]
     environment:
       TZ: Europe/Berlin
