@@ -2,11 +2,14 @@ services:
   test:
     image: busybox:latest
     restart: no
-    entrypoint: "sh -c"
-    command: |
-      echo "Hello, World!"
-      date
+    entrypoint: ["sh", "-ec"]
+    environment:
+      TZ: Europe/Berlin
+    command:
+      - |
+        echo "Hello World!"
+        date
     labels:
       cd.doco.job.enabled: "true"
-      cd.doco.job.schedule: "*/1 * * * *"
+      cd.doco.job.schedule: "@every 1m"
       cd.doco.job.skip_running: "false"
