@@ -14,5 +14,5 @@ services:
     labels:
       cd.doco.job.enabled: "true"
       cd.doco.job.schedule: "@every 10s"
-      cd.doco.job.skip_running: "false"
-      cd.doco.job.execution_mode: "one_shot"
+      #cd.doco.job.skip_running: "false"
+      #cd.doco.job.execution_mode: "one_shot"
