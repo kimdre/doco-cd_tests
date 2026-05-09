@@ -1,15 +1,15 @@
 services:
   test:
-    image: busybox:latest
+    image: bash:latest
     restart: no
     entrypoint: ["sh", "-ec"]
     environment:
       TZ: Europe/Berlin
     command:
       - |
-        echo "Hello World!"
+        echo "Hello Underworld!"
         date
     labels:
       cd.doco.job.enabled: "true"
-      cd.doco.job.schedule: "@every 1m"
+      cd.doco.job.schedule: "@every 10s"
       cd.doco.job.skip_running: "false"
