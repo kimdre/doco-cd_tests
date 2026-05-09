@@ -7,7 +7,7 @@ services:
       TZ: Europe/Berlin
     command:
       - |
-        echo "Hello Underworld!"
+        echo "Hello world!"
         date
     labels:
       cd.doco.job.enabled: "true"
