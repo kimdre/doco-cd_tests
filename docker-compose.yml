@@ -1,7 +1,7 @@
 services:
   test:
     image: busybox:latest
-    restart: unless-stopped
+    restart: no
     entrypoint: "sh -c"
     command: |
       echo "Hello, World!"
