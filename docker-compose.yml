@@ -1,4 +1,7 @@
-#services:
+services:
+  dummy:
+    image: bash:latest
+
 #  test:
 #    image: bash:latest
 #    restart: no
