@@ -1,23 +1,24 @@
 services:
   dummy:
     image: bash:latest
+    scale: 0
 
-#  test:
-#    image: bash:latest
-#    restart: no
-##    deploy:
-##      #mode: global
-##      restart_policy:
-##        condition: none
-#    entrypoint: ["sh", "-ec"]
-#    environment:
-#      TZ: Europe/Berlin
-#    command:
-#      - |
-#        echo "Hello world!"
-#        date
-#    labels:
-#      cd.doco.job.enabled: "true"
-#      cd.doco.job.schedule: "@every 10s"
-#      #cd.doco.job.skip_running: "false"
-#      cd.doco.job.execution_mode: "restart"
+  test:
+    image: bash:latest
+    restart: no
+#    deploy:
+#      #mode: global
+#      restart_policy:
+#        condition: none
+    entrypoint: ["sh", "-ec"]
+    environment:
+      TZ: Europe/Berlin
+    command:
+      - |
+        echo "Hello world!"
+        date
+    labels:
+      cd.doco.job.enabled: "true"
+      cd.doco.job.schedule: "@every 10s"
+      #cd.doco.job.skip_running: "false"
+      cd.doco.job.execution_mode: "restart"
