@@ -6,7 +6,7 @@ services:
   test:
     image: bash:latest
     #scale: 0
-    restart: always
+    restart: no
 #    deploy:
 #      #mode: global
 #      restart_policy:
