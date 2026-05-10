@@ -5,6 +5,7 @@ services:
 
   test:
     image: bash:latest
+    scale: 0
     restart: no
 #    deploy:
 #      #mode: global
