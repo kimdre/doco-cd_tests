@@ -1,1 +1,6 @@
 name: schedule-test
+reconciliation:
+  enabled: true
+  events:
+    - unhealthy
+    - die
