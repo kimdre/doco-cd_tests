@@ -3,4 +3,4 @@ reconciliation:
   enabled: true
   events:
     - unhealthy
-    - die
+    - stop
