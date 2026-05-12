@@ -22,4 +22,4 @@ services:
       cd.doco.job.enabled: "true"
       cd.doco.job.schedule: "@every 30s"
       #cd.doco.job.skip_running: "false"
-      cd.doco.job.execution_mode: "restart"
+      cd.doco.job.execution_mode: "one_shot"
