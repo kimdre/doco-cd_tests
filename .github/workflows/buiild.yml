@@ -1,6 +1,11 @@
 # .github/workflows/build-and-sign.yml
 name: Build and Sign
 
+permissions:
+    contents: read
+    packages: write
+    id-token: write # needed for signing the images with GitHub OIDC Token
+
 on:
   push:
 
