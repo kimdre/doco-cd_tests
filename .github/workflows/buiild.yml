@@ -4,7 +4,6 @@ name: Build and Sign
 permissions:
     contents: read
     packages: write
-    attestations: write
     id-token: write # needed for signing the images with GitHub OIDC Token
 
 on:
