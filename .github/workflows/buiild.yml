@@ -33,11 +33,27 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build and push artifact
-        run: |
-          docker build -t ghcr.io/kimdre/doco-cd_tests:test .
-          docker push ghcr.io/kimdre/doco-cd_tests:test
+      - id: docker_meta
+        uses: docker/metadata-action@v5.7.0
+        with:
+          images: ghcr.io/kimdre/doco-cd_tests
+          tags: type=raw,value=test
+
+      - name: Build and Push container images
+        uses: docker/build-push-action@v6.18.0
+        id: build-and-push
+        with:
+          platforms: linux/amd64
+          push: true
+          tags: ${{ steps.docker_meta.outputs.tags }}
 
       - name: Sign OIDC artifact
+        env:
+          DIGEST: ${{ steps.build-and-push.outputs.digest }}
+          TAGS: ${{ steps.docker_meta.outputs.tags }}
         run:
-          cosign sign --yes ghcr.io/kimdre/doco-cd_tests:test
+          images=""
+          for tag in ${TAGS}; do
+            images+="${tag}@${DIGEST} "
+          done
+          cosign sign --yes ${images}
