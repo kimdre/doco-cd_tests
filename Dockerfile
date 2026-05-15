@@ -1,4 +1,3 @@
-FROM nginx:latest
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY html /usr/share/nginx/html
-EXPOSE 80
+# syntax=docker/dockerfile:1
+FROM python:3.13-slim
+RUN --mount=type=cache,target=/root/.cache/pip pip install requests

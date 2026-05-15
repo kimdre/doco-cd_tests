@@ -1,6 +1,13 @@
 services:
-  web:
+  python:
     build: .
-    #pull_policy: build
-    ports:
-      - 8080:80
+    environment:
+      TZ: Europe/Berlin
+    entrypoint: ["python", "-uc"]
+    command:
+      - |
+        import time
+        from datetime import datetime
+        while True:
+          print(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+          time.sleep(1)
