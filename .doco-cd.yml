@@ -3,7 +3,7 @@ working_dir: apps/
 # auto_discovery: true
 auto_discovery:
   enabled: true
-  delete: false
+  delete: true
   remove_volumes: false
   #depth: 2
 environment:
