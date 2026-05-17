@@ -1,9 +1,10 @@
 working_dir: apps/
-destroy: false
+#destroy: false
 # auto_discovery: true
 auto_discovery:
   enabled: true
   delete: false
+  remove_volumes: false
   #depth: 2
 environment:
   BASE: base
