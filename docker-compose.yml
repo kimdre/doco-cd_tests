@@ -14,7 +14,7 @@ services:
     entrypoint: ["sh", "-ec"]
     environment:
       TZ: Europe/Berlin
-      ID: 1
+      ID: 2
     command:
       - |
         echo "Hello world!"
