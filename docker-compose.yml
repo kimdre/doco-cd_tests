@@ -22,7 +22,7 @@ services:
         sleep 15
     labels:
       cd.doco.job.enabled: "true"
-      cd.doco.job.schedule: "@every 30s" # "0 12 * * *"
+      cd.doco.job.schedule: "@hourly" # "@every 30s"
       #cd.doco.job.skip_running: "false"
       cd.doco.job.execution_mode: one_off
       cd.doco.job.wait_running_jobs: "true"
