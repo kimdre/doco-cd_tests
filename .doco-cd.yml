@@ -1,6 +1,3 @@
-name: schedule-test
-reconciliation:
-  enabled: true
-  events:
-    - unhealthy
-    - stop
+name: example
+wait_running_jobs: true
+force_image_pull: true

@@ -1,31 +1,28 @@
 services:
-  dummy:
-    image: bash:latest
-    scale: 0
-
-  test:
-    image: bash:latest
-    #scale: 0
-    restart: no
-#    deploy:
-#      #mode: global
-#      restart_policy:
-#        condition: none
-    entrypoint: ["sh", "-ec"]
-    environment:
-      TZ: Europe/Berlin
-      ID: 1
+  init_example:
+    container_name: init_example
+    image: alpine:3.23.4
     command:
+      - /bin/sh
+      - -c
       - |
-        echo "Hello world!"
-        date
-        sleep 10
-    labels:
-      cd.doco.job.enabled: "true"
-      cd.doco.job.schedule: "@every 30s"
-      #cd.doco.job.skip_running: "false"
-      cd.doco.job.execution_mode: one_off
-      cd.doco.job.wait_running_jobs: "true"
+        set -eu
+        apk add --no-cache gettext
+        envsubst < /temp/example.ini > /tmp/example.ini
+        cp -f /tmp/example.ini /app1/example.ini
+        envsubst < /temp/example.toml > /tmp/example.toml
+        cp -f /tmp/example.toml /app2/example.toml
+        exit 0
+    environment:
+      TEST: hello
+    restart: "no"
+    volumes:
+      - ./temp/:/temp
+      - ./app1/:/app1
+      - ./app2/:/app2
 
-  nginx:
-    image: nginx:latest
+  example:
+    image: nginx
+    depends_on:
+      init_example:
+        condition: service_completed_successfully
