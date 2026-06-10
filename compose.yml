@@ -6,7 +6,7 @@ services:
 
 volumes:
   tmp:
-    driver: local
+#    driver: local
     driver_opts:
       type: tmpfs
       device: tmpfs
