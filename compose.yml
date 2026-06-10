@@ -1,25 +1,11 @@
 services:
-  flappy-health:
-    image: alpine:3.20
-    container_name: flappy-health
-    command:
-      - sh
-      - -c
-      - |
-        echo "Container started healthy window"
-        mkdir -p /state
-        date +%s > /state/start
-        sleep 10
-        echo "Health should now become unhealthy"
-        tail -f /dev/null
-    healthcheck:
-      test:
-        - CMD-SHELL
-        - |
-          start=$$(cat /state/start 2>/dev/null || echo 0); \
-          now=$$(date +%s); \
-          elapsed=$$((now - start)); \
-          [ "$$elapsed" -lt 10 ]
-      interval: 1s
-      timeout: 1s
-      retries: 1
+  app:
+    image: nginx
+    volumes:
+      - data:/mnt/data
+
+volumes:
+  data:
+    driver: tmpfs
+    driver_opts:
+      size: 100m
