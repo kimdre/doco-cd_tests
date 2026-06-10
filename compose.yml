@@ -6,6 +6,8 @@ services:
 
 volumes:
   data:
-    driver: tmpfs
+    driver: local
     driver_opts:
-      size: 100m
+      type: tmpfs
+      device: tmpfs
+      o: size=200m
