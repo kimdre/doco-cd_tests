@@ -2,10 +2,10 @@ services:
   app:
     image: nginx
     volumes:
-      - data:/mnt/data
+      - tmp:/tmp
 
 volumes:
-  data:
+  tmp:
     driver: local
     driver_opts:
       type: tmpfs
