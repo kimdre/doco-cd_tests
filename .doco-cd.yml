@@ -5,7 +5,7 @@ auto_discovery:
   enabled: true
   delete: true
   remove_volumes: true
-  #depth: 2
+  depth: 1
 environment:
   BASE: base
   SUB: base
