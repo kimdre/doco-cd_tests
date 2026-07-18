@@ -14,7 +14,6 @@ services:
       TZ: Europe/Berlin
       SOME: Value
       id: 5
-      foo=baar
     labels:
       - traefik.enable=true
       - traefik.http.routers.webhook.entrypoints=websecure
