@@ -4,7 +4,6 @@ include:
 services:
   test:
     #scale: 1
-    #container_name: test 
     extends:
       file: base.compose.yml
       service: base
