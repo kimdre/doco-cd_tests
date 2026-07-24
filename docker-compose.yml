@@ -1,5 +1,5 @@
-include:
-- include.compose.yml
+#include:
+#- include.compose.yml
 
 services:
   test:
