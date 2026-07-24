@@ -1,5 +1,5 @@
-#include:
-#- include.compose.yml
+include:
+- include.compose.yml
 
 services:
   test:
@@ -22,12 +22,12 @@ services:
     ports:
       - "80"
     volumes:
-      #- ./html:/usr/share/nginx/html
+      - ./html:/usr/share/nginx/html
       - test:/test
-    # configs:
-    #   - test.txt
-    # secrets:
-    #   - secret.txt
+    configs:
+      - test.txt
+    secrets:
+      - secret.txt
     env_file:
       - .env
       - test.enc.env
@@ -50,10 +50,10 @@ volumes:
 networks:
   test:
 
-# configs:
-#   test.txt:
-#     file: test.txt
+configs:
+  test.txt:
+    file: test.txt
 
-# secrets:
-#   secret.txt:
-#     file: secret.txt
+secrets:
+  secret.txt:
+    file: secret.txt
