@@ -20,6 +20,7 @@ services:
         echo "Hello world!"
         date
         sleep 10
+        echo done sleeping
     labels:
       cd.doco.job.enabled: "true"
       cd.doco.job.schedule: "@every 30s"
