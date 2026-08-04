@@ -3,7 +3,7 @@ include:
 
 services:
   test:
-    #scale: 1
+    scale: 1
     extends:
       file: base.compose.yml
       service: base
