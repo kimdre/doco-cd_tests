@@ -21,6 +21,7 @@ services:
       - |
         echo "Hello world!"
         date
+        ls -l /
         cat /test
         sleep 10
         echo done sleeping
