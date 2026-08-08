@@ -37,4 +37,5 @@ services:
 
 configs:
   test:
-    content: test
+    content: |
+      test
