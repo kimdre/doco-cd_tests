@@ -15,10 +15,14 @@ services:
     environment:
       TZ: Europe/Berlin
       ID: 1
+    secrets:
+      - test
     command:
       - |
         echo "Hello world!"
         date
+        ls -l /run/secrets/
+        cat /run/secrets/test
         sleep 10
         echo done sleeping
     labels:
@@ -30,3 +34,7 @@ services:
 
   nginx:
     image: nginx:latest
+
+secrets:
+  test:
+    environment: test

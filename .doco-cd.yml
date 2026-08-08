@@ -4,3 +4,5 @@ reconciliation:
   events:
     - unhealthy
     - stop
+environment:
+  test: hi
