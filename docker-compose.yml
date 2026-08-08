@@ -22,7 +22,7 @@ services:
         echo "Hello world!"
         date
         ls -l /
-        cat /test
+        cat /test; echo
         sleep 10
         echo done sleeping
     labels:
