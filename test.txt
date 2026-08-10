@@ -1,1 +1,1 @@
-this is a very NEW config file!
+this is a very nice config file!
