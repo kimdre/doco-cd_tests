@@ -1,1 +1,1 @@
-this is a new config file!
+this is a NEW config file!
