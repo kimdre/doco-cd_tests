@@ -1,6 +1,6 @@
 include:
-- https://github.com/kimdre/doco-cd_tests.git#main:/include.compose.yml
-#- oci://ghcr.io/kimdre/doco-cd_tests:test
+#- https://github.com/kimdre/doco-cd_tests.git#main:/include.compose.yml
+- oci://ghcr.io/kimdre/doco-cd_tests:test
 
 services:
   test:
