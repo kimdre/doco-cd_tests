@@ -1,6 +1,0 @@
-services:
-  base:
-    restart: always
-    labels:
-      from-base: true
-      trigger: 2
