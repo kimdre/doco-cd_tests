@@ -1,4 +1,1 @@
 name: test-deploy
-environment:
-  DB_DATA_LOCATION: db-data
-  UPLOAD_LOCATION: uploads
