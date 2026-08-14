@@ -6,3 +6,4 @@ reconciliation:
     - stop
 environment:
   test: hi
+  FOO: bar
