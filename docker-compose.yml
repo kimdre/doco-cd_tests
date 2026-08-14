@@ -6,3 +6,7 @@ include:
 services:
   test:
     image: nginx
+
+volumes:
+  db-data:
+  uploads:
