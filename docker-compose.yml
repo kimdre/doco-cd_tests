@@ -23,6 +23,8 @@ services:
   scheduler-test:
     image: busybox:latest
     restart: no
+    environment:
+      TEST_PASSWORD: ${TEST_PASSWORD:-unset}
     entrypoint: ["/bin/sh", "-c"]
     command:
       - |
