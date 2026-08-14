@@ -24,7 +24,7 @@ services:
         date
         ls -l /
         cat /test; echo
-        sleep 10
+        sleep 15
         echo done sleeping
     labels:
       cd.doco.job.enabled: "true"
