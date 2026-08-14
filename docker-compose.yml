@@ -16,14 +16,14 @@ services:
       TZ: Europe/Berlin
       ID: 1
       foo: ${FOO}-baz
-#    configs:
-#      - test
+    configs:
+      - test
     command:
       - |
         echo "Hello world!"
         date
         ls -l /
-        #cat /test; echo
+        cat /test; echo
         sleep 10
         echo done sleeping
     labels:
@@ -36,7 +36,7 @@ services:
   nginx:
     image: nginx:latest
 
-#configs:
-#  test:
-#    content: |
-#      test
+configs:
+  test:
+    content: |
+      test
