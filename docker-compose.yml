@@ -3,10 +3,6 @@ include:
 #- oci://ghcr.io/kimdre/doco-cd_tests:compose-oci
 - https://github.com/immich-app/immich.git#v3.0.3:docker/docker-compose.yml
 
-services:
-  test:
-    image: nginx
-
 volumes:
   db-data:
   uploads:
