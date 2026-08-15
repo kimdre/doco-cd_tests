@@ -2,7 +2,7 @@ include:
 #- https://github.com/kimdre/doco-cd_tests.git#main:/include.compose.yml
 #- oci://ghcr.io/kimdre/doco-cd_tests:compose-oci
 - path: https://github.com/immich-app/immich.git#v3.0.3:docker/docker-compose.yml
-  #project_directory: .
+  project_directory: .
 
 volumes:
   db-data:
