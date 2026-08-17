@@ -15,12 +15,14 @@ services:
       username: $USERNAME
       ref_test: $REF_TEST
       a: d
+      cert: $CERT
+      cert_key: $CERT_KEY
     env_file: ./foo.env
-    configs:
-      - source: test.crt
-        target: /test.crt
-      - source: test.key
-        target: /test.key
+#    configs:
+#      - source: test.crt
+#        target: /test.crt
+#      - source: test.key
+#        target: /test.key
 
   scheduler-test:
     image: busybox:latest
@@ -39,9 +41,9 @@ services:
       cd.doco.job.execution_mode: "one_off"
       cd.doco.job.skip_running: "true"
 
-configs:
-  test.crt:
-    environment: CERT
-    #content: ${CERT:-empty}
-  test.key:
-    environment: CERT_KEY
+#configs:
+#  test.crt:
+#    environment: CERT
+#    #content: ${CERT:-empty}
+#  test.key:
+#    environment: CERT_KEY
