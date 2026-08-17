@@ -8,6 +8,8 @@ services:
       TZ: Europe/Berlin
       HELLO: World!
       Foo: bar
+      cert: $CERT
+      cert_key: $CERT_KEY
     labels:
       test1test1: inject.${TEST_PASSWORD}
       test2: ignore.$${TEST_PASSWORD}
@@ -15,8 +17,6 @@ services:
       username: $USERNAME
       ref_test: $REF_TEST
       a: d
-      cert: $CERT
-      cert_key: $CERT_KEY
     env_file: ./foo.env
 #    configs:
 #      - source: test.crt
