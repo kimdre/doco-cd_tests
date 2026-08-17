@@ -19,6 +19,8 @@ services:
     configs:
       - source: test.crt
         target: /test.crt
+      - source: test.key
+        target: /test.key
 
   scheduler-test:
     image: busybox:latest
@@ -41,3 +43,5 @@ configs:
   test.crt:
     #environment: CERT
     content: ${CERT:-empty}
+  test.key:
+    environment: CERT_KEY
