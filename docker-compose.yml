@@ -8,8 +8,8 @@ services:
       TZ: Europe/Berlin
       HELLO: World!
       Foo: bar
-      #cert: $CERT
-      #cert_key: $CERT_KEY
+      cert: $CERT
+      cert_key: $CERT_KEY
     labels:
       test1test1: inject.${TEST_PASSWORD}
       test2: ignore.$${TEST_PASSWORD}
