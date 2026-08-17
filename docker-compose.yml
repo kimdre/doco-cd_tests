@@ -34,7 +34,7 @@ services:
         sleep 10
         echo Done
     labels:
-      cd.doco.job.enabled: "true"
+      cd.doco.job.enabled: "false"
       cd.doco.job.schedule: "*/1 * * * *"
       cd.doco.job.execution_mode: "one_off"
       cd.doco.job.skip_running: "true"
