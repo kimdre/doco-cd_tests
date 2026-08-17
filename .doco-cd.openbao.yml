@@ -6,4 +6,5 @@ external_secrets:
   TEST_PASSWORD: kv:secret:mysecret:password
   OTHER_PASSWORD: "kv:secret:mysecret:password"
   USERNAME: kv:secret:mysecret:username
-  CERT: pki:pki:test.example.internal
+  CERT: pki-role:pki:example-dot-internal:test.example.internal
+  
