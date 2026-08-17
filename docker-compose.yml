@@ -41,7 +41,7 @@ services:
 
 configs:
   test.crt:
-    #environment: CERT
-    content: ${CERT:-empty}
+    environment: CERT
+    #content: ${CERT:-empty}
   test.key:
     environment: CERT_KEY
