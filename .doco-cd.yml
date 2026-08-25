@@ -1,10 +1,8 @@
 name: test-deploy1
 reference: main
-repository_url: https://github.com/kimdre/doco-cd.git
-working_dir: test
 compose_files:
   - test.compose.yaml
 env_files:
   - base.env
   - prod.env
-  - remote:test.env
+  - test.env

@@ -1,0 +1,35 @@
+# Self-contained fixture used by doco-cd's "Private Repository" and
+# "With Remote Repository" integration tests.
+services:
+  app:
+    image: nginx:latest
+    ports:
+      - "80"  # use random published port
+    depends_on:
+      - dep
+    volumes:
+      - ./:/usr/share/nginx/html
+    environment:
+      TEST_ENV_VAR: example_value
+    labels:
+      - something=${SOMETHING:-none}
+      - base=${BASE:-none}
+      - prod=${PROD:-none}
+      - remote=${REMOTE:-none}
+    env_file:
+      - test.env
+    secrets:
+      - test_secret
+    configs:
+      - test_config
+
+  dep:
+    image: nginx:latest
+
+secrets:
+  test_secret:
+    file: ./secret.txt
+
+configs:
+  test_config:
+    file: ./config.conf
