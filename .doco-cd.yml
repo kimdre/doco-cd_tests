@@ -1,5 +1,4 @@
 name: test-deploy1
-reference: main
 compose_files:
   - test.compose.yaml
 env_files:
