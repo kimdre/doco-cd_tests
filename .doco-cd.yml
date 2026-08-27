@@ -6,6 +6,8 @@ env_files:
   - .env
 environment:
   INLINE_ENV: hi
+labels:
+  cd.doco.deployment.autostart: "false"
 #force_recreate: false
 #prune_images: true
 #context: nas
