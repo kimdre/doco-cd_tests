@@ -19,6 +19,7 @@ services:
       - traefik.http.routers.webhook.tls.certresolver=le
       - test=$HOST_HOSTNAME
       - inline.env=$INLINE_ENV
+      - cd.doco.deployment.autostart=false
     ports:
       - "80"
     volumes:
