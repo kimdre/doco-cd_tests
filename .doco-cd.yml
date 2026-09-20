@@ -1,7 +1,3 @@
 name: test-deploy1
-compose_files:
-  - test.compose.yaml
-env_files:
-  - base.env
-  - prod.env
-  - test.env
+repository_url: https://github.com/kimdre/doco-cd.git
+reference: main
