@@ -3,4 +3,4 @@ services:
     restart: always
     labels:
       from-base: true
-      trigger: 2
+      trigger: 1
