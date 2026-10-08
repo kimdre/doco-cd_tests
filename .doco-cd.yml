@@ -14,7 +14,7 @@ reconciliation:
   enabled: true
   restart_timeout: 10
   restart_limit: 5
-  restart_window: 300
+  restart_window: 5m
   events:
     - stop
     #- die
