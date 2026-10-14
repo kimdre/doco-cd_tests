@@ -1,13 +1,10 @@
 services:
   app:
-    image: nginx
+    image: alpine:3.22
+    command: ["tail", "-f", "/dev/null"]
     volumes:
-      - tmp:/tmp
-
+      - state:/state
+    post_start:
+      - command: ["sh", "-c", "echo attempt >> /state/attempts; test -f /state/ready"]
 volumes:
-  tmp:
-    driver: local
-    driver_opts:
-      type: tmpfs
-      device: tmpfs
-      o: size=50m
+  state:
