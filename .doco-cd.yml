@@ -1,8 +1,8 @@
 name: retry-budget
 swarm:
   enabled: false
-retry:
-  max_retries: 1
-  delay: 20s
+#retry:
+#  max_retries: 1
+#  delay: 20s
 reconciliation:
   enabled: false
