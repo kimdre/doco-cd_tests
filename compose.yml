@@ -3,8 +3,8 @@ services:
     image: alpine:3.22
     command: ["tail", "-f", "/dev/null"]
     volumes:
-      - state:/state
+      - /tmp/state:/state
     post_start:
       - command: ["sh", "-c", "echo attempt >> /state/attempts; test -f /state/ready"]
-volumes:
-  state:
+#volumes:
+#  state:
